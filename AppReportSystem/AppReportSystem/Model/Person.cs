@@ -8,6 +8,7 @@ namespace AppReportSystem.Model
 {
     public class Person
     {
+        //add some comment
         public string Name { get; set; }
         public string Id { get; set; }
         public DateTime DateOfBirth { get; set; }
