@@ -11,7 +11,11 @@ namespace AppReportSystem
         static void Main(string[] args)
         {
             StudentController intrStu = new StudentController();
-            intrStu.inputStudent();
+            //intrStu.inputStudent(); //untuk input
+            //intrStu.printStudent(); //cetak
+            //intrStu.editStudent(); //edit
+            intrStu.delStudent(); //delete
+
         }
     }
 }

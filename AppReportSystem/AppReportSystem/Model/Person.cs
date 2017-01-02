@@ -12,7 +12,8 @@ namespace AppReportSystem.Model
         public string Id { get; set; }
         public DateTime DateOfBirth { get; set; }
         public string Gender { get; set; }
-
+        public Person() {
+        }
         public Person(string name, string id, DateTime birth, string gender)
         {
             this.Name = name;
