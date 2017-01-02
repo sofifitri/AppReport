@@ -80,6 +80,7 @@ namespace AppReportSystem
 
             if (searchstudent(num) == 1)
             {
+                sub:
                 this.searchstudent(num);
                 Console.WriteLine("Cek isi data. Lanjutkan Hapus data? y or n");
                 answer = Console.ReadLine();
@@ -97,6 +98,13 @@ namespace AppReportSystem
                 else if (answer.ToLower() == "n")
                 {
                     goto back;
+                }
+                else
+                {
+                    Console.Clear();
+                    Console.WriteLine("Input Salah....");
+                    Console.ReadLine();
+                    goto sub;
                 }
 
 
@@ -122,6 +130,7 @@ namespace AppReportSystem
             
             if (searchstudent(num) != null)
             {
+                sub:
                 this.searchstudent(num);
                 Console.WriteLine("Cek isi data. Lanjutkan Edit data? y or n");
                 answer = Console.ReadLine();
@@ -170,6 +179,13 @@ namespace AppReportSystem
                 else if (answer.ToLower() == "n")
                 {
                     goto back;
+                }
+                else
+                {
+                    Console.Clear();
+                    Console.WriteLine("Input Salah....");
+                    Console.ReadLine();
+                    goto sub;
                 }
             }
             else
